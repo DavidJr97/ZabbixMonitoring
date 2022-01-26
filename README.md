@@ -27,6 +27,12 @@ Monitoreo de Hardware y servicios mediante Zabbix-Docker.
 2. User: Admin
 3. Password: zabbix
 
+# SOLUTION TO CACHE ERROR IN DOCKER
+ The solution to the cache limit reached problem is solved as follows:
+ in the docker-compose.yml file. in the environment add the Variable <ZBX_CACHESIZE=2G>
+ 
+ The link is attached in the references to be able to visualize the variables available to be used within the docker-compose environment.
+ 
 # REFERENCES 
 1. [Docker + System dashboard](https://grafana.com/grafana/dashboards/893)
 2. [Grafana](https://grafana.com/grafana/dashboards/893)
@@ -36,3 +42,4 @@ Monitoreo de Hardware y servicios mediante Zabbix-Docker.
 6. [Zabbix Monitorear Oracle utilizando Agente](https://www.zabbix.com/la/integrations/oracle)
 7. [Zabbix Monitorear Docker utilizando Agente](https://techexpert.tips/es/zabbix-es/supervision-de-docker-mediante-zabbix/)
 8. [Notificaciones Mediante Correo Electrónico](https://techexpert.tips/es/zabbix-es/zabbix-configuracion-de-notificacion-por-correo-electronico/)
+9. [Variables disponibles a utilizar en Zabbix Docker-compose](https://hub.docker.com/r/zabbix/zabbix-server-mysql/)
